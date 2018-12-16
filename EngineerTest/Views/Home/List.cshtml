@@ -1,0 +1,19 @@
+﻿@model IEnumerable<EngineerTest.Models.Member>
+
+@{
+    ViewData["Title"] = "List";
+}
+
+<h2>List</h2>
+    <table class="table">
+        <tr>
+            <th>氏名</th><th>メールアドレス</th>
+        </tr>
+        @foreach (var item in Models)
+        {
+        <tr>
+            <td>@item.Name</td>
+            <td>@item.Email</td>
+        </tr>
+        }
+     </table>
